@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+#pic{
+  width:400px;
+  height:400px;
+  box-shadow:2px 5px 5px gray;
+  display:block;
+  margin:auto;
+}
+
+#myslider{
+  display:block;
+  margin:auto;
+  transition: all ease-in-out;
+  border-radius: 20px;
+  background-color: #6DAD68;
+}
+
+
+#pic1{
+  width:400px;
+  height:400px;
+  box-shadow:2px 5px 5px gray;
+  display:block;
+  margin:auto;
+}
+
+#myslider1{
+  display:block;
+  margin:auto;
+  transition: all ease-in-out;
+  border-radius: 20px;
+  background-color: #6DAD68;
+}
+
+
+header{
+
+width:100vw;
+height:100vh;
+margin:auto;
+background-image:url("images/3.png");
+opacity:0.80;
+background-position: bottom;
+background-size:cover;
+display: flex;
+align-items:flex-end ;
+justify-content:center ;
+z-index:-1;
+
+}
+.header-content{
+
+margin:auto;
+color:black;
+text-align:center;
+
+}
+
+.header-content h2 {
+
+font-size:50px ;
+text-align:center;
+color:black;
+align-items: center ;
+
+}
+
+#vv{
+  margin:auto;
+  text-align: center;
+  display:block;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  
+  
+}
+
+
+#middlebar{ 
+  width:90%;
+  padding:80px;
+  text-align:justify;
+  text-indent:40px;
+  word-spacing:10px;
+  justify-content:space-between;
+  padding: 40px;
+  font-size: 20px;
+  margin: auto;
+}
+
+
+
+/*extra small devices(phones,600px and down)*/
+
+@media only screen and (max-width:600px)
+{
+
+  #myslider{
+  display:block;
+  margin:auto;
+  transition: all ease-in-out;
+  border-radius: 20px;
+  background-color: #6DAD68;
+  width:30%;}
+
+
+  #pic{
+  width:200px;
+  height:200px;
+  box-shadow:10px 10px 10px gray;
+  display:block;
+  margin:auto;
+   }
+
+
+}
+
+
+
+  /*small devices (portrait tab andlarge phones.600px and up)*/
+
+  @media only screen and (min-width:600px)
+{
+
+  #myslider{
+  display:block;
+  margin:auto;
+  transition: all ease-in-out;
+  border-radius: 20px;
+  background-color: #6DAD68;
+  width: auto;
+}
+
+}
+
+/* medium devices(landscapes tab ,768px and up)*/
+
+@media only screen and (min-width:768px)
+{
+
+
+    
+}
+
+/* large devices(laptop/destop,992px and up)*/
+
+@media only screen and (min-width:992px)
+{
+
+
+
+    
+
+}
+
+/*extra large devices(large laptop and desktop,1200px and up)*/
+
+@media only screen and (min-width:1200px)
+{
+
+
+
+ 
+}
+
+
+
+
+
+
+
+
+</style>
+
+
+<body>
+
+  <div class="header-content">
+    <h2>We deliver memorable experience</h2>
+    </div>
+
+   <header>
+   
+   
+ <img src="images/18.jpg" id="pic">
+ <input type="range" min="0" max="2" id="myslider">
+   
+
+
+ <script>
+  
+ 
+  var mycolor=["red","blue","green","orange","teal","brown"]
+
+ 
+  var plist =["5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","13.jpg"]
+
+  var p = document.getElementById("pic")
+
+  var s = document.getElementById("myslider")
+
+  s.onchange = function()
+  {
+    p.src="images/"+plist[s.value]
+  }
+
+ </script>
+
+
+  
+
+  </header>
+
+  <h1 style="text-align:center;font-family:verdana,Arial black;font-size:30px;color:#6DAD68;box-shadow:10px 10px 10px gray;border-radius: 45px">No More Waitlist</h1>
+
+</body>
+
+
+
+<img src="images/18.jpg" id="pic1">
+ <input type="range" min="0" max="6" id="myslider1">
+   
+
+
+ <script>
+
+ 
+  var mycolor=["red","blue","green","orange","teal","brown"]
+
+ 
+  var list =["5.jpg","6.jpg","7.jpg","8.jpg","9.jpg","10.jpg","13.jpg"]
+
+  var t = document.getElementById("pic1")
+
+  var r = document.getElementById("myslider1")
+
+  r.onchange = function()
+  {
+    t.src="images/"+list[r.value]
+  }
+
+ </script>
+
+ <div id="vv">
+  .  .  .  .  .  .  .
+ </div>
+
+
+
+<body>
+
+
+
+
+<div id="middlebar" >
+    <h2 style="text-align:center;background:gray;color:white;font-family:Helvetica, sans-serif;font-size:30px;border-radius: 30px;
+    box-shadow:10px 10px 10px gray"><u>Thank You</u></h2>
+    
+
+
+  <p>
+
+    Raheja Developers is one of the largest Real Estate companies in India established in the year 1990 by Mr. Navin M. Raheja. The company has always maintained path breaking status and has pioneered various firsts in India. From trend setting luxury housing to providing homes for the poorest section of Indian society, from India’s tallest skyscrapers to 165 acres of plotted township, from changing the way people shop to changing the way people work, We have achieved it all.
+
+ In our dynamic journey of last 30 years, we have collaborated with several top notch names in the field of construction, innovation, design, architecture, cinema and hotels. The Leela Hotel, Tata Housing, L&T, Best Western, Ginger hotel to name a few of our national alliances.Our legacy has always been to endeavor the best and deliver the best, creating value for money for everyone. The things are visible in the way we create our projects.
+ </p>
+ <p>
+
+  <h2 style="text-align:center;background:gray;color:white;font-family:Helvetica, sans-serif;font-size:30px;border-radius: 30px;
+    box-shadow:10px 10px 10px gray"><u>AWARD-WINNING 
+ COMPANY</u></h2>
+
+
+ <h3 style="text-align:center;background:gray;color:white;font-family:Helvetica, sans-serif;font-size:30px;border-radius: 30px;
+    box-shadow:10px 10px 10px gray"><u>OUR VALUE PROPOSITION IS ACCURACY AND CONVENIENCE</u></h3>
+
+ <h3 style="text-align:center;background:gray;color:white;font-family:Helvetica, sans-serif;font-size:30px;border-radius: 30px;
+    box-shadow:10px 10px 10px gray"><u>32
+ YEARS</u></h3>
+
+
+ <h3 style="text-align:center;background:gray;color:white;font-family:Helvetica, sans-serif;font-size:30px;border-radius: 30px;
+    box-shadow:10px 10px 10px gray"><u>We have been working in the industry since 1990.</u></h3>
+
+
+
+ <h3 style="text-align:center;background:gray;color:white;font-family:Helvetica, sans-serif;font-size:30px;border-radius: 30px;
+    box-shadow:10px 10px 10px gray"><u>15700 units delivered and under construction
+  150+</u></h3>
+
+ <h2 style="text-align:center;background:gray;color:white;font-family:Helvetica, sans-serif;font-size:30px;border-radius: 30px;
+    box-shadow:10px 10px 10px gray"><u>AWARDS</u></h2>
+
+ <h3 style="text-align:center;background:gray;color:white;font-family:Helvetica, sans-serif;font-size:30px;border-radius: 30px;
+    box-shadow:10px 10px 10px gray"><u>Raheja has been awarded for constuction many times.</u></h3>
+
+
+ </p>
+
+ <p>
+
+
+  Raheja Developers is a pioneer in bringing in new innovations and construction practices to all its projects. It has always been the company’s endevour to deliver best quality products to its customers. Our motto has been to deliver on time, to deliver as promised and to design innovative green buildings. We bring international construction and technology partners like Arabtec, ECC, Thronton Tomasetti, Peri, Aedas in India. We were also amongst the first ones to bring affordable housing in the state of Haryana, under Pradhan Mantri Awas Yojana and Deen Dayal Jan Awas Yojana.
+
+ So far we have delivered approximately 30 million Sq. Ft. of construction inventory across all segments. And Another 20 million Sq. Ft. area including future developments is under execution. We have delivered approximately over 7,500 units and envisage to deliver another 8,400 in next 2 to 3 years.
+
+
+
+ </p>
+</div>
+
+
+<ul>
+  <li>Home</li>
+  <li>Our Story
+  <ul class="dropdown">
+  <li>About Us</li>
+  <li>Profile</li>
+  <li>Vision</li>
+  </ul>
+  <li>Management
+   <ul class="dropdown">
+     <li>RK Narayan</li>
+     <li>Rama</li>
+     <li>Kesari</li>
+  </ul>
+  <li>CSR & SUSTAINBILITY</li>
+  <li>wildlife</li>
+  <li>Corporate social responsibility
+  <ul class="dropdown">
+  <li>Book Appointment</li>
+  </ul>
+  </li>
+   <li>Career
+   <ul class="dropdown">
+     <li>Jobs</li>
+     <li>Contact Us</li>
+     <li>Real Estate  Agent/Login</li>
+ </ul>
+
+
+
+</body>
+
+
+</body>
+</html>

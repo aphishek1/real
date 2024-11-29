@@ -1,0 +1,703 @@
+﻿<!doctype html>
+
+<html>
+<head><title>Menu1</title>
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+
+
+
+
+
+
+
+
+
+
+<style>
+/*                           Media Query For break Point                          */
+
+/* Extra small devices (phones, 600px and down)   */
+
+@media only screen and (max-width: 600px)
+ {
+  body{background:reen}
+
+
+img{
+width:100%;
+height:100%;
+text-align:center;
+}
+
+#header{
+margin:auto;
+}
+
+#main,#middlebar{
+    flex-direction:column;
+  
+}
+
+
+
+
+
+
+
+ }
+
+  /*small devices (portrait tab andlarge phones.600px and up)*/
+
+@media only screen and (min-width:600px)
+{
+
+  .header{
+
+    width:100vw;
+    height:100vh;
+    padding-left: 0%;
+    margin:auto;
+    background-image:url("images/9.png");
+    opacity:0.80;
+    background-position: bottom;
+    background-size:cover;
+    display: flex;
+    align-items:flex-end ;
+    justify-content:center ;
+    
+    }
+    
+
+}
+
+/* medium devices(landscapes tab ,768px and up)*/
+
+@media only screen and (min-width:768px)
+{
+
+  header{
+
+    width:100vw;
+    height:100vh;
+    padding-left: 0%;
+    margin:auto;
+    background-image:url("images/9.png");
+    opacity:0.80;
+    background-position: bottom;
+    background-size:cover;
+    display: flex;
+    align-items:flex-end ;
+    justify-content:center ;
+    
+    }
+    
+}
+
+/* large devices(laptop/destop,992px and up)*/
+
+@media only screen and (min-width:992px)
+{
+
+
+  header{
+
+    width:100vw;
+    height:100vh;
+    padding-left: 0%;
+    margin:auto;
+    background-image:url("images/9.png");
+    opacity:0.80;
+    background-position: bottom;
+    background-size:cover;
+    display: flex;
+    align-items:flex-end ;
+    justify-content:center ;
+    
+    }
+    
+
+}
+
+/*extra large devices(large laptop and desktop,1200px and up)*/
+
+@media only screen and (min-width:1200px)
+{
+
+  header{
+  width:100%;
+  height: 100vh;
+  background-image:url("images/9.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  }
+
+ 
+}
+
+</style>
+
+<style>
+
+
+#About
+
+ {
+ margin:auto;
+ width:90%;
+ height:auto;
+ }
+
+ #middlebar{ 
+  width:90%;
+  padding:80px;
+  text-align:justify;
+  text-indent:40px;
+  word-spacing:10px;
+  justify-content:space-between;
+  padding: 40px;
+  font-size: 20px;
+  margin: auto;
+}
+
+.p{
+  
+}
+
+
+
+
+html{
+  scroll-behavior:smooth;
+  }
+  
+
+ul{
+list-style:none;
+margin:auto;
+background:black;
+}
+
+ul li{
+display:inline-block;
+position:relative;
+
+}
+
+ul li a{
+display:block;
+border-radius:25px;
+padding:15px;
+color:white;
+text-decoration:none;
+text-align:center;
+font-size:20px;
+
+}
+
+ul li ul.dropdown li{
+display:block;
+
+}
+
+ul li ul.dropdown{
+width:200%;
+backgroun:gray;
+position:absolute;
+z-index:1;
+display:none;
+opacity:0.60;
+
+}
+
+
+ul li a:hover{
+background:teal;
+}
+
+ul li:hover ul.dropdown{
+display:block;
+}
+
+#zz{
+  width:100%;
+  margin:auto;
+}
+
+
+header{
+
+width:100vw;
+height:100vh;
+padding-left: 0%;
+margin:auto;
+background-image:url("images/8.png");
+opacity:0.80;
+background-position: bottom;
+background-size:cover;
+display: flex;
+align-items:flex-end ;
+justify-content:center ;
+
+}
+
+
+.header-content{
+
+margin-bottom:150px;
+color:black;
+text-align:center;
+
+}
+
+
+.header-content h2 {
+
+font-size:50px ;
+color: aliceblue;
+
+}
+
+.header-content h1 {
+
+    font-size:60px ;
+    margin-top:50px;
+    margin-bottom:30px;
+    color: cyan;
+}
+
+
+@keyframes ani1
+{
+from{margin-left:0px;}
+to{margin-left:-690%}
+}
+
+
+#mask
+{
+background:black;
+width:90%;
+margin:auto;
+margin-top:10px ;
+height:100px;
+box-shaddow:10px 10px 10px gray;
+overflow:hidden;
+box-shadow:10px 10px 10px gray ;
+border-radius: 25px;
+}
+
+#news
+{
+color:white;
+width:800%;
+height:100px;
+font-family:arial black;
+font-size:60px;
+padding:10px;
+transition:2s;
+z-index:-1;
+border-radius: 25px;
+animation:ani1 40s linear infinite;
+}
+
+
+
+#inner-box{
+  width: 100%;
+  height:auto;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  border:2px solid black;
+}
+
+.text
+{
+display: flex;
+flex-wrap: wrap;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;  
+box-shadow:10px 10px 10px gray;
+margin: auto;
+height:100px;
+
+}
+
+.author-info{
+width:100% ;
+border-radius: 10px;
+border:2px solid black;
+display: block;
+text-align: center;
+flex-wrap: wrap;
+
+}
+
+.wow{
+display:flex;
+justify-content:center;
+flex-wrap: wrap;
+
+}
+
+
+.car3{
+  background:darkorange;
+  width:270px;
+  height:100px;
+  margin:10px;
+  background-size: cover;
+  border-radius: 30px;
+  text-align: center;
+  }
+  
+  
+  
+  .car3 a{
+    background-color: black;
+    color:white;
+    padding:15px;
+    display:block;
+    text-align: center;
+  
+  }
+  
+  .car3:hover{
+  
+    background-color:darkkhaki;
+    color:chocolate;
+    cursor:pointer;
+    transform:scale(1.03);
+    transition: all 1s ease;
+  
+  }
+  
+  .wow3{
+  display:flex;
+  justify-content:center;
+  flex-wrap: wrap;
+  
+  }
+
+
+
+  footer
+{
+
+display:flex;
+width:100%;
+background:black;
+color:white;
+height: 400px;;
+margin:auto;
+justify-content:space-between;
+
+}
+#mcopy{
+width:50%;
+padding:20px;
+height:300px;
+}
+
+#sitemap
+{
+width:50%;
+padding:20px;
+height:300px;
+}
+
+
+#socialmedia{
+width:30%;
+padding:20px;
+height:300px;
+
+}
+
+
+
+
+</style>
+
+
+<body>
+
+<div id="zz">
+ <ul>
+ <li><a href="index.html">Home</a></li>
+ <li><a href="#">Our Story</a>
+ <ul class="dropdown">
+ <li><a href="profile.html">Profile</a></li>
+ </ul>
+ <li><a href="#">Projects</a>
+  <ul class="dropdown">
+    <li><a href="404.html">Move In</a></li>
+    <li><a href="comm.html">Large Investment</a></li>
+    
+ </ul>
+ <li><a href="#review">Review</a></li>
+ <li><a href="iframe.html">Map</a></li>
+ <li><a href="#">Services</a>
+ <ul class="dropdown">
+ <li><a href="form.html">Book Appointment</a></li>
+ </ul>
+ </li>
+  <li><a href="#">Career</a>
+  <ul class="dropdown">
+    <li><a href="sli.html">Jobs</a></li>
+    <li><a href="photos.html">Contact Us</a></li>
+    <li><a href="login.html">Real Estate  Agent/Login</a></li>
+</ul>
+</div>
+
+</body>
+
+  
+<header>
+
+<div class="header-content">
+   <h2>Luxury</h2>
+   <div class="line"></div>
+   <h1>Namaste</h1>
+   
+</div>
+
+</header>
+
+
+
+
+  <div id="middlebar" >
+    <h2 style="text-align:center;background:gray;color:white;font-family:Helvetica, sans-serif;font-size:30px;border-radius: 30px;
+    box-shadow:10px 10px 10px gray"><u>Thank You</u></h2>
+    
+
+
+  <p>
+  
+  Thank you for visiting www.com
+
+ The aforesaid website is the only official website of Raheja Developers Limited (“Company”). The viewer(s)user(s) are cautioned and advised not to rely upon any information stated on any other websites which may appear to be similar to the Company’s official website and/or contain Company’s logo/brand name or information about the Company or its projects.
+
+ By using or accessing the website you agree with the disclaimer without any qualification or limitation. The viewer/user confirms that the information including brochures and marketing collaterals on this website are solely for informational purposes only and the viewer/user has not relied on this information for making any booking/purchase in any project of the Company. Nothing on this website constitutes advertising, marketing, booking, selling or an offer for sale, or invitation to purchase a unit in any project in any manner by the Company.
+
+ The company reserves the right to add, alter or delete material from the website at any time and may, at any time, revise these terms without notifying you. You are bound by any such amendments and the company therefore advise that you periodically visit this page to review the current terms.
+
+ This website may contain other proprietary notices and copyright information, the terms of which must be observed and followed.
+ <p>
+ The present content on the website(s), regarding the project and in respect of the apartments, plot or building, and project layout, area, amenities, services, terms of sale and other relevant terms, are based on the approved and sanctioned plans subject to any modification and change in consonance with relevant laws or as directed by the authorities. The visuals, pictures, images/renderings/maps of the project at the development/construction stage, are purely indicative, informative, and representational in nature and only an architect's impression, unless specifically claimed to be actual photographs. Further, the designs, dimensions, cost, facilities, plans, images, specifications, furniture, accessories, paintings, items, electronic goods, additional fittings/fixtures, decorative items, false ceiling including finishing materials, specifications, shades, sizes and colour of the tiles and other details shown in the images are only indicative in nature and are only for the purpose of illustrating/indicating a possible layout and do not form part of the standard specifications/amenities/services to be provided in the flat.
+ </p>
+ The particulars on the website mention details of the projects/developments undertaken by the Company including depicting banners/posters of the project. The contents are being modified in terms of the stipulations/recommendations under the Real Estate Regulatory Act, 2016 and rules made thereunder and accordingly may not be fully in line thereof as of date. You are therefore required to verify all the details, including area, amenities, services, terms of sales and payments and other relevant terms independently with the sales team/ company prior to concluding any decision for buying any unit(s) in any of the said projects. Till such time the details are fully updated, the said information will not be construed as an advertisement. To find out more about a project / development, please telephone our sales centre or visit our sales office during opening hours and speak to one of our sales staff.
+ <p>
+ Some links within the website may lead to other websites, including those operated and maintained by third parties. The Company includes these links solely as a convenience to you, and the presence of such a link does not imply a responsibility for the linked site or an endorsement of the linked site, its operator, its contents or under RERA.
+
+ The Company makes no representations whatsoever about any other website which you may access through this one. When you access a non-Company realty website, even one that may contain the Company-logo, please understand that it is independent from the Company, and that the Company has no control over the content on that website. In addition, a link to a non-Company Web site does not mean that the Company endorses or accepts any responsibility for the content, or the use, of such website. It is up to you to take precautions to ensure that whatever you select for your use is free of such items as viruses, worms, trojan horses and other items of a destructive nature.
+
+ Queries/feedback/etc. are not monitored on the website, therefore shall not be construed as read or registered with Company or the owner of the website. The Company will not be accepting any bookings or allotments based on the images, material, stock photography, projections, details, and descriptions that are currently available and/or displayed on the website.
+ </p>
+ <p>
+ In no event will the company be liable for claim made by the users including seeking any cancellation for any of the inaccuracies in the information provided in this Website, though all efforts have to be made to ensure accuracy. The company under no circumstance will be liable for any expense, loss or damage including, without limitation, indirect or consequential loss or damage, or any expense, loss or damage whatsoever arising from use, or loss of use, of data, arising out of or in connection with the use of this website. The user/customer(s) acknowledge, agree and undertake to not hold the Company or any of its affiliates liable/responsible for any information stated, representation(s)/commitment(s)/offer(s) made by any third parties on their website to the user/customer(s) nor make any claims/demands on the Company or any of its affiliates with respect thereto
+
+ The foregoing are subject to the prevailing laws of India and the courts in Delhi shall have the exclusive jurisdiction on any dispute that may arise out of the use of this site.
+
+ We thank you for your patience and understanding.
+
+ </p>
+
+
+</div>
+
+
+
+
+<body>
+
+<div id="mask">
+    
+<div id="news">&nbsp;The particulars on the website mention details of the projects/developments undertaken by the Company including depicting banners/posters of the project. The contents are being modified in terms of the stipulations/recommendations under the Real Estate Regulatory Act, 2016 and rules made thereunder and accordingly may not be fully in line thereof as of date. You are therefore required to verify all the details, including area, amenities, services, terms of sales and payments and other relevant terms independently with the sales team/ company prior to concluding any decision for buying any unit(s) in any of the said projects. Till such time the details are fully updated, the said information will not be construed as an advertisement. To find out more about a project / development, please telephone our sales centre or visit our sales office during opening hours and speak to one of our sales staff..
+    </div>
+    </div>
+
+</body>
+
+
+
+
+<div class="inner-box"> 
+<div class="text">"TooGood Event is a well-integrated Event Management Company that is flexible enough to transform an event that could render diverse benefits to an organization with less amount of time and money investment. <br>
+        The highly passionate team has perpetually acknowledged our targets as its own."</div>
+<div class="author-info">
+<h3>Priya Kumar<br>
+<h4>Sr Executive</h4></h3>
+</div>
+
+<p>
+
+</p>
+
+<h2 style="font-family:Helvetica, sans-serif black;font-size:30px;color:green;
+text-align:center">Our Program</h2>
+
+<body>
+  <section class="wow3">
+    <div class="car3">
+      <div class="car3-img "></div>
+      <h2>Plots</h2>
+      
+    </div>
+    
+    <div class="car3">
+      <div class="car3-img "></div>
+      <h2>Luxury Residences</h2>
+      
+    </div>
+  
+    <div class="car3">
+      <div class="car3-img "></div>
+      <h2>Commerical</h2>
+     
+
+  
+    </div>
+
+
+    <div class="car3">
+      <div class="car3-img "></div>
+      <h2>Farmland</h2>
+      
+    </div>
+    
+    <div class="car3">
+      <div class="car3-img "></div>
+      <h2>Ready To Move In</h2>
+      
+    </div>
+  
+    <div class="car3">
+      <div class="car3-img "></div>
+      <h2>Sco Plots</h2>
+      
+      </div>
+
+      <div class="car3">
+          <div class="car3-img "></div>
+          <h2>Affordable</h2>
+          
+          </div>
+
+          <div class="car3">
+              <div class="car3-img "></div>
+              <h2>Trusted</h2>
+              
+              </div>
+
+</section>     
+
+
+</body>
+
+
+<footer>
+
+  &#8482;  
+<div id="mcopy">CopyRight<ol style="list-style:none:padding:0px">
+<li> Details
+</li>
+<li> Students
+</li>
+<li> Rules
+</li>
+<li>Deals
+</li>
+</ol>
+<li><a href="https://rumble.com/c/c-6816266/"><i class="fa-brands fa-square-youtube"></i></a></li>
+<p>
+</p>
+&#169
+<ol style="list-style-image:url(images/92.png)">
+<li>Company</li>
+<li>Resrved Category</li>
+<li>Other Brands</li>
+<li>Cases</li>
+</ol>
+</div>
+
+
+&#174;
+<div id="sitemap">Site Map<ol style="list-style:none;padding:0px">
+<li> Details
+</li>
+<li> Students
+</li>
+<li> Rules
+</li>
+<li>Deals
+</li>
+</ol>
+
+
+  <li><a href="https://www.instagram.com/arenadelhi/"><i class="fa-brands fa-instagram"></i></a></li>
+
+
+  <li>Corporate headquarters</li>
+  <li>A- 50 &amp; 51, 3rd Floor, Prem Nagar, Uttam Nagar,Delhi-110059</li>
+  <li>HEAD OFFICE</li>
+  <li>Plot No. A-56, 1st Floor, Rama Park Road, Uttam Nagar, New Delhi 110059</li>
+  <li>aphishek1.github.io/view</li>
+  </ul>
+
+
+</footer>
+
+<div class="title">Support Team</div>
+  <h3>+91 - 98XXXXXXX</h3>
+  <ul>
+  <li>+91 - 70XXXXXXX</li>
+  </ul>
+</div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
